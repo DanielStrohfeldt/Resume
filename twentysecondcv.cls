@@ -146,23 +146,19 @@
 		\end{tabular}
 
 		%------------------------------------------------
-		
-		\ifthenelse{\equal{\aboutme}{}}{}{
-			\profilesection{About me}
-			\begin{flushleft}
-				\aboutme
-			\end{flushleft}
-		}
-
-		%------------------------------------------------
 
 		\profilesection{Skills}
-
 		\skills
 		\skillstext
 		\scriptsize
 
-			
+		
+		\ifthenelse{\equal{\aboutme}{}}{}{
+			\profilesection{Familiar Tools}
+			\begin{flushleft}
+				\aboutme
+			\end{flushleft}
+		}
 		%------------------------------------------------
 			
 	\end{textblock}
